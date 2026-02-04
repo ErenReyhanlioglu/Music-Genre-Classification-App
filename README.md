@@ -102,6 +102,7 @@ The comparative analysis on the GTZAN dataset demonstrates the superior stabiliz
 | | **CNN + BiLSTM** | **0.91** | **0.91** | **0.91** |
 
 ![GTZAN Confusion Matrix](Music%20Genre%20Classification/assets/gtzan_cnn_and_bilstm.jpeg)
+<p align="center"><sub><i>Figure 1: Confusion Matrix of CNN + BiLSTM model trained on GTZAN Dataset (10 genres).</i></sub></p>
 
 ### Table III: FMA-Small Dataset Results
 On the FMA-Small dataset, the CNN + BiLSTM hybrid architecture proved to be the most effective model for capturing complex data patterns.
@@ -115,6 +116,7 @@ On the FMA-Small dataset, the CNN + BiLSTM hybrid architecture proved to be the 
 | | **CNN + BiLSTM** | **0.93** | **0.93** | **0.93** |
 
 ![FMA-Small Confusion Matrix](Music%20Genre%20Classification/assets/fma_small_cnn_and_bilstm.jpeg)
+<p align="center"><sub><i>Figure 2: Confusion Matrix of CNN + BiLSTM model trained on FMA-Small Dataset (8 genres).</i></sub></p>
 
 ## Training Settings
 
