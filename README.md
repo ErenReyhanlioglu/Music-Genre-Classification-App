@@ -1,4 +1,4 @@
-# 🎶 Music Genre Classification App
+# Music Genre Classification App
 
 A research-based full-stack web application that classifies music genres using both **machine learning** and **deep learning** models. The project compares traditional algorithms like SVM and k-NN with CNN and CNN+BiLSTM architectures on two benchmark datasets: **GTZAN** and **FMA-Small**.
 
@@ -42,7 +42,7 @@ A research-based full-stack web application that classifies music genres using b
 
 ## Parameters
 
-### 🎧 Input Representation
+### Input Representation
 - **Audio Length**: 30 seconds  
 - **Sampling Rate**: 44,100 Hz  
 - **Feature Type**: Mel-spectrogram  
@@ -85,6 +85,36 @@ A research-based full-stack web application that classifies music genres using b
   - **Logistic Regression**: `C=10`, L2 penalty, saga solver
 - **Output Classes**: 8 or 10 (based on dataset)
 - **Accuracy Range**: 57%–76%
+
+## Experimental Results & Performance
+
+The performance of the models was evaluated through a rational analysis using **Precision**, **Recall**, and **F1-Score** metrics.
+
+### Table II: GTZAN Dataset Results
+The comparative analysis on the GTZAN dataset demonstrates the superior stabilization and performance of deep learning architectures.
+
+| Model Category | Model | Precision | Recall | F1 Score |
+| :--- | :--- | :---: | :---: | :---: |
+| **Traditional ML** | k-NN | 0.74 | 0.74 | 0.74 |
+| | SVM | 0.74 | 0.75 | 0.74 |
+| | Logistic Regression | 0.75 | 0.76 | 0.75 |
+| **Deep Learning** | CNN | 0.91 | 0.91 | 0.91 |
+| | **CNN + BiLSTM** | **0.91** | **0.91** | **0.91** |
+
+![GTZAN Confusion Matrix](assets/gtzan_cnn_and_bilstm.jpeg)
+
+### Table III: FMA-Small Dataset Results
+On the FMA-Small dataset, the CNN + BiLSTM hybrid architecture proved to be the most effective model for capturing complex data patterns.
+
+| Model Category | Model | Precision | Recall | F1 Score |
+| :--- | :--- | :---: | :---: | :---: |
+| **Traditional ML** | k-NN | 0.51 | 0.49 | 0.48 |
+| | SVM | 0.62 | 0.61 | 0.61 |
+| | Logistic Regression | 0.57 | 0.57 | 0.57 |
+| **Deep Learning** | CNN | 0.92 | 0.92 | 0.92 |
+| | **CNN + BiLSTM** | **0.93** | **0.93** | **0.93** |
+
+![FMA-Small Confusion Matrix](assets/fma_small_cnn_and_bilstm.jpeg)
 
 ## Training Settings
 
